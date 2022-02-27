@@ -20,8 +20,87 @@ html {
     box-sizing: border-box;
 }
 body {
+    margin: 0;
+    padding: 0;
     font-family: 'Roboto';
+    font-weight: normal;
     font-size: 16px;
     line-height: 1.2;
     color: #343A40;
 }
+.wrapper {
+    width: 1170px;
+    margin: 0 auto; 
+}
+
+/* header styles start*/
+.header {
+    background-color: #FFFFFF;
+    height: 56px;
+}
+.wrapper__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo__and__nav {
+    display: flex;
+    align-items: center;
+}
+.header__logo {
+    margin-right: 23px;
+    padding-right: 20px;
+}
+.header__list {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    padding: 0;
+}
+.list__item {
+    margin-right: 35px;
+}
+.list__link {
+    text-decoration: none;
+    color: #828282;
+}
+.list__link:hover,
+.list__link:active,
+.list__link:focus {
+    border-bottom: 2px solid #C4C4C4;
+}
+.header__search {
+    display: flex;
+}
+.search__field {
+    width: 257px;
+    height: 36px;
+    color: #6C757D;
+    padding-left: 12px;
+    border: 1px solid #CED4DA;
+    border-radius: 4px 0 0 4px;
+    border-right: 0;
+}
+
+.search__button {
+    background: url(/figma-test-1/assets/svg/Icon-search.svg) no-repeat;
+    background-position: center;
+    background-color: #FFFFFF;
+    width: 36px;
+    height: 36px;
+    border: 1px solid #CED4DA;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+input:focus {
+    outline: none;
+}
+/* header styles end*/
+
+/* main styles start*/
+.main {
+    background-color: #F5F5F5;
+    height: 100vh;
+}
+/* main styles end*/
