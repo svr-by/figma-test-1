@@ -29,7 +29,7 @@ body {
     color: #343A40;
 }
 .wrapper {
-    width: 1170px;
+    max-width: 1170px;
     margin: 0 auto; 
 }
 
@@ -102,5 +102,28 @@ input:focus {
 .main {
     background-color: #F5F5F5;
     height: 100vh;
+}
+.breadcrumb__list {
+    display: flex;
+    list-style: none;
+    /* justify-content: space-between; */
+    padding: 30px 0 30px 0;
+    margin: 0;
+}
+.breadcrumb__link {
+    color: #4F4F4F;
+    margin-right: 15px;
+    text-decoration: none;
+}
+.breadcrumb__link::after {
+    content: "/";
+    margin-left: 8px;
+}
+.breadcrumb__link:hover,
+.breadcrumb__link:focus {
+    color: #6C757D;
+}
+.breadcrumb__link:focus::after {
+    content: none;
 }
 /* main styles end*/
