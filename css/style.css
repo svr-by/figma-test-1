@@ -48,24 +48,20 @@ body {
     justify-content: space-between;
     align-items: center;
 }
-.logo__and__nav {
-    display: flex;
-    align-items: center;
-}
 .header__logo {
     margin-right: 23px;
     padding-right: 20px;
 }
-.header__list {
+.nav {
+    margin-right: auto;
     display: flex;
+}
+.header__list {
     list-style: none;
-    justify-content: space-between;
     padding: 0;
 }
-.list__item {
-    margin-right: 35px;
-}
 .list__link {
+    margin-right: 35px;
     text-decoration: none;
     color: #828282;
 }
@@ -176,6 +172,8 @@ input:focus {
     cursor: pointer;
     font-size: 16px;
     line-height: 24px;
+    height: 36px;
+    /* padding: 6px 12px; */
 }
 /* main styles end*/
 .wrapper__footer {
